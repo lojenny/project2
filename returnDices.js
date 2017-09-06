@@ -14,10 +14,9 @@
 
 
 function countCharactersTypes(str) {
-  var strNoSpace = str.replace(/ /g,'');
   var output = {};
-  for (var i = 0; i < strNoSpace.length; i++) {
-    var char = strNoSpace[i];
+  for (var i = 0; i < str.length; i++) {
+    var char = str[i];
     var position = i
     if (output[char]) {
       output[char].push(position);
